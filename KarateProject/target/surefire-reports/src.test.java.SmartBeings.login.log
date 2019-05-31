@@ -1,0 +1,94 @@
+09:54:01.919 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:54:01.919 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:54:01.919 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:54:01.919 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:54:02.610 request:
+1 > POST https://dev.smartbeings.ai/v1/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev.smartbeings.ai
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"userName":"","password":"","deviceId":""}
+
+09:54:02.610 request:
+1 > POST https://dev.smartbeings.ai/v1/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 80
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev.smartbeings.ai
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"userName":"user4@test.com","password":"password","deviceId":"861107037615409"}
+
+09:54:02.610 request:
+1 > POST https://dev.smartbeings.ai/v1/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 68
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev.smartbeings.ai
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"userName":"user4@test.com","password":"nothing","deviceId":"hfsj"}
+
+09:54:02.610 request:
+1 > POST https://dev.smartbeings.ai/v1/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev.smartbeings.ai
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"userName":"vishnu","password":"password","deviceId":"kdfjasdfjdaks"}
+
+09:54:04.256 response time in milliseconds: 1641.28
+1 < 401
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 105
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 31 May 2019 04:24:02 GMT
+1 < ETag: W/"69-Mqn6STSGF5JNyruO2WogA+9B1Ak"
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < X-Powered-By: Express
+{"status":401,"message":"Failed to authenticate user.","error":"Hub does not belong to user","data":null}
+
+09:54:04.436 response time in milliseconds: 1823.68
+1 < 401
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 127
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 31 May 2019 04:24:02 GMT
+1 < ETag: W/"7f-qZwyJRYLXtrnHCa8/X/5QqxhBkg"
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < X-Powered-By: Express
+{"status":401,"message":"Failed to authenticate user.","error":"No user found with this email id or mobile number","data":null}
+
+09:54:04.637 response time in milliseconds: 2026.25
+1 < 422
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 126
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 31 May 2019 04:24:03 GMT
+1 < ETag: W/"7e-rH372hoRXxIn4WUKBf22yi0yWXg"
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < X-Powered-By: Express
+{"status":422,"message":"Error while login","error":"Request body should contain userName, password and deviceId","data":null}
+
+09:54:04.637 response time in milliseconds: 2026.37
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 756
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 31 May 2019 04:24:03 GMT
+1 < ETag: W/"2f4-Rlb4+yp7+C+6zSDpUzr0/yk3vtU"
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < X-Powered-By: Express
+{"status":200,"message":"Login Successful","data":{"userType":"domainCustomer","firstName":"demo","lastName":"user 4","status":"authorized","id":191,"email":"user4@test.com","image":"upload_eb217d2e36e1f1b50ffc37d3016fb818.png","sessionToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE5MSwidXNlclR5cGVJZCI6MywiZGV2aWNlSWQiOiI4NjExMDcwMzc2MTU0MDkiLCJpYXQiOjE1NTkyNzY2NDMsImV4cCI6MTU1OTM2MzA0M30.MAd3Y4Plc8bFFGwx2zyVZ_6HTMovw1jphGZWe77aBA8","expiresIn":"24h","refreshToken":"NchJ0Pi5A9uiLy8qkdVHiQOctZL1MjbEc7h4Pxdnkfr1LYxqyHige3nhA3WkRkxTk22EaigZk9bibWNbMKKoRpBS5o4cwrQeZPX44b6tLXe8R6zNCfiA5gMRdlKaXkUSgK4CXRFy9mZqB7iiqe7yPkc0dMhZGpweBUxS8sU9EqE9QP0tQP5EidOE9UidvkPeq5M4gF9C96cblBMNXL6z4DKs6VA9vQjFt7wiWJrgjNQ9kl5vB","isLogin":"true"},"error":""}
+
+KmB1XMXWpP7KVfFSGsxT1pBo0DCbyv2WnN2hlIVDeXMMCv7HRx21EAUYIqjN7jSqKRJB1BmwOllDje6CCOs5FRGChVKzrL8IIAJ4fZfXq3dWUQ1du5NYvSJ4mZMAhY02awuy7ddOaLZk7F7ZJh0cJEjTfJiHqDRiy6nMxfyhdBH0XYCS4W56dDZJYa18ccPOYFm8FDzq6ACXIMbYMHkZcgPxwKOykVy","isLogin":"true"},"error":""}
+
