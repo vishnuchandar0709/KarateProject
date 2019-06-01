@@ -13,6 +13,6 @@ Then status <status>
 Examples:
 	| username 			|	password	|	deviceId		|	status	|
 	| user4@test.com	|	password	|	861107037615409	|	200		|
-	| vishnu			|	password 	|	kdfjasdfjdaks	|	402		|
-	| user4@test.com	|	nothing		|	hfsj			|	402		|	
+	| vishnu			|	password 	|	kdfjasdfjdaks	|	444		|
+	| user4@test.com	|	nothing		|	hfsj			|	444		|	
 	|					|				|					|	422		|
